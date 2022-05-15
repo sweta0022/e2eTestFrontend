@@ -1,0 +1,23 @@
+
+.table-view {
+    /* width: 75%; */
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+  }
+    
+  table {
+    border: 2px solid forestgreen;
+    width: 100%;
+    height: 100%;
+  }
+    
+  th {
+    border-bottom: 1px solid black;
+  }
+    
+  td {
+    text-align: center;
+  }

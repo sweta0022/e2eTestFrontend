@@ -1,0 +1,176 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.sidebar{
+    position: fixed;
+    height: 100%;
+    width: 240px;
+    background: #303234;
+    /* transition: all 0.5s ease; */
+  }
+
+  .sidebar .logo-details{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background: #2c2c2d;
+  }
+
+  .sidebar .logo-details .logo_name{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    min-width: 60px;
+  }
+
+  .sidebar .nav-links{
+    margin-top: 10px;
+  }
+
+  .sidebar .nav-links li{
+    position: relative;
+    list-style: none;
+    height: 50px;
+  }
+
+  .sidebar .nav-links li a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+ 
+  .sidebar .nav-links li a .links_name{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .home-section{
+    position: relative;
+    background: #f5f5f5;
+    min-height: 100vh;
+    width: calc(100% - 240px);
+    left: 240px;
+  }
+
+  .sidebar.active ~ .home-section{
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+
+  .home-section nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: calc(100% - 240px);
+    left: 240px;
+    z-index: 100;
+    padding: 0 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  .sidebar.active ~ .home-section nav{
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+
+  .home-section .home-content{
+    position: relative;
+    padding-top: 104px;
+  }
+
+  .home-content .user-primary {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .home-content .user-detail{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* left box */
+.home-content .user-primary .user-primary-box{
+    width: 100%;
+    background: #fff;
+    padding: 20px 30px;
+    margin: 0 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .home-content .user-detail .user-detail-box{
+    width: 100%;
+    background: #fff;
+    padding: 20px 30px;
+    margin: 0 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;;
+  }
+
+  button{
+    color: #fff;
+    background: #0A2558;
+    padding: 4px 12px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+ 
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  .row .text input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: #fff;
+    color: #000000;
+  }
+
+  .row .radio input[type="radio"] {
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  .row .checkbox input[type="checkbox"] {
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  .row .selectBox select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    padding: 10px;
+  }
+
+  .error{
+    color:red
+  }
+
+
